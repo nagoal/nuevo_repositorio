@@ -14,11 +14,11 @@ def toss_coin(n): #función que emula el lanzamiento de una moneda
 
   for r in trial_outcomes:
    outcome_no += 1
-    if r == 1:
-      outcome_1_count += 1
-      mean = outcome_1_count / outcome_no
-      chart.add_rows([mean])
-      time.sleep(0.05)
+   if r == 1:
+     outcome_1_count += 1
+     mean = outcome_1_count / outcome_no
+     chart.add_rows([mean])
+     time.sleep(0.05)
   return mean
 number_of_trials = st.slider('¿Número de intentos?', 1, 1000, 10)
 start_button = st.button('Ejecutar')
